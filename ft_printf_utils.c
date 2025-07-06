@@ -6,7 +6,7 @@
 /*   By: emkaymak <emkaymak@student.42.kocaeli.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/04 23:10:34 by emkaymak          #+#    #+#             */
-/*   Updated: 2025/07/05 20:15:46 by emkaymak         ###   ########.fr       */
+/*   Updated: 2025/07/06 15:35:51 by emkaymak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,15 +90,16 @@ int	ft_puthex(unsigned int n, char format)
 int	ft_putptr(unsigned long ptr)
 {
 	char	*hex;
-	int		printed;
+	int		count;
 
 	hex = "0123456789abcdef";
-	printed = 0;
+	count = 0;
 	if (ptr == 0)
 		return (ft_putstr("(nil)"));
-	printed += ft_putstr("0x");
 	if (ptr >= 16)
-		printed += ft_putptr(ptr / 16);
-	printed += ft_putchar(hex[ptr % 16]);
-	return (printed);
+		count += ft_putptr(ptr / 16);
+	else
+		count += ft_putstr("0x");
+	count += ft_putchar(hex[ptr % 16]);
+	return (count);
 }
