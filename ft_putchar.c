@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emkaymak <emkaymak@student.42.kocaeli.c    +#+  +:+       +#+        */
+/*   By: emkaymak < emkaymak@student.42kocaeli.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/05 16:00:53 by emkaymak          #+#    #+#             */
-/*   Updated: 2025/07/05 16:05:01 by emkaymak         ###   ########.fr       */
+/*   Updated: 2025/07/10 16:57:12 by emkaymak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
